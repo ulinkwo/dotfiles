@@ -1,45 +1,33 @@
-[hub]
-  protocol = https
 [user]
-  name = Amo Wu
-  email = amo260@gmail.com
-  signingkey = E77D0CB6
-[credential]
-  helper = osxkeychain
-[color]
-  diff = auto
-  status = auto
-  branch = auto
-  log = auto
-  ui = true
-[core]
-  excludesfile = ~/.gitignore
-  editor = vim
-[help]
-  autocorrect = 1
-[push]
-  # See `git help config` (search for push.default)
-  # for more information on different options of the below setting.
-  #
-  # Setting to git 2.0 default to surpress warning message
-  default = simple
-[diff]
-  tool = sourcetree
-[difftool]
-  prompt = false
-[difftool "sourcetree"]
-  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-  trustExitCode = false
-[merge]
-  tool = sourcetree
-[mergetool]
-  keepBackup = false
-[mergetool "sourcetree"]
-  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-  trustExitCode = true
-[filter "lfs"]
-  clean = git-lfs clean %f
-  smudge = git-lfs smudge %f
-  required = true
+	name = Liu Zhiping
+	email = liuzhiping@zhixuezhen.com
+	signingkey = C25288BF0BAB79595397708C685E12059EDC2CAE
 [commit]
-  gpgsign = true
+	gpgsign = true
+	template = /Users/zxz/.stCommitMsg
+[core]
+	excludesfile = /Users/zxz/.gitignore
+	autocrlf = input
+  editor = vim
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[alias]
+	br = branch
+	co = checkout
+	st = status
+	ci = commit
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    sw = switch
+    rs = restore
+	ss = sh
+	sh = stash
+	shp = stash pop
+	shl = stash list
+[init]
+	defaultBranch = main
+[gpg]
+	program = /usr/local/bin/gpg

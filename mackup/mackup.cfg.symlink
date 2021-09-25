@@ -5,7 +5,7 @@
 # With the "dropbox" storage engine, Mackup will automatically figure out your
 # Dropbox folder.
 [storage]
-engine = dropbox
+engine = file_system
 
 # If you choose the "google_drive" storage engine instead, Mackup will figure
 # out where your Google Drive is and store your configuration files in it.
@@ -23,6 +23,7 @@ engine = dropbox
 # path = some/folder/in/your/home
 # # or
 # path = /some/folder/in/your/root
+path = .oh-my-mac
 
 # You can customize the directory name in which Mackup stores your file. By
 # default, if not specified, Mackup creates a "Mackup" directory in the storage
@@ -39,14 +40,14 @@ directory = Mackup
 #
 # For example, to sync Irssi, Ventrilo and XEmacs, add:
 [applications_to_sync]
-aws
-flux
 iterm2
-moom
 oh-my-zsh
-sourcetree
-sublime-text-3
 ssh
+maven
+mackup
+vscode
+vscode-insiders
+wakatime
 
 # List of applications you want to ignore
 # One application name per line
