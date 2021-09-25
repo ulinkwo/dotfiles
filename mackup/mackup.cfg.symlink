@@ -41,7 +41,7 @@ directory = Mackup
 # For example, to sync Irssi, Ventrilo and XEmacs, add:
 [applications_to_sync]
 iterm2
-oh-my-zsh
+#oh-my-zsh
 ssh
 kubernetes-cli
 maven
