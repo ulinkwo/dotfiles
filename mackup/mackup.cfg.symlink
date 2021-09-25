@@ -43,6 +43,7 @@ directory = Mackup
 iterm2
 oh-my-zsh
 ssh
+kubernetes-cli
 maven
 mackup
 vscode
