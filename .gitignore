@@ -18,3 +18,5 @@
 sftp-config.json
 
 .history
+
+Brewfile.lock.json

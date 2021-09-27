@@ -21,8 +21,8 @@
 	st = status
 	ci = commit
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-    sw = switch
-    rs = restore
+        sw = switch
+        rs = restore
 	ss = sh
 	sh = stash
 	shp = stash pop
@@ -30,4 +30,9 @@
 [init]
 	defaultBranch = main
 [gpg]
-	program = /usr/local/bin/gpg
+	program = /usr/local/MacGPG2/bin/gpg
+
+[http]
+	proxy = socks5://127.0.0.1:1086
+[https]
+	proxy = socks5://127.0.0.1:1086
